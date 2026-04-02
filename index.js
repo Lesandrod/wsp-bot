@@ -422,5 +422,12 @@ async function connectToWhatsApp() {
 
     return sock;
 }
+if (process.env.RESET_SESSION === 'true') {
+    if (fs.existsSync('auth_info')) {
+        fs.rmSync('auth_info', { recursive: true });
+        console.log('🗑️ Sesión borrada, escanea el QR');
+    }
+}
 
+connectToWhatsApp();
 connectToWhatsApp();
