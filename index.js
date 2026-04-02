@@ -430,4 +430,3 @@ if (process.env.RESET_SESSION === 'true') {
 }
 
 connectToWhatsApp();
-connectToWhatsApp();
