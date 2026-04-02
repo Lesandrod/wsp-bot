@@ -182,7 +182,7 @@ async function flujoNoPago(sock, remoteJid) {
     await enviarMensaje(sock, remoteJid,
         `Sin problema! 😊 Cuando estés listo, escríbeme y con gusto te ayudo.\n\nRecuerda que por solo S/${PRECIO} puedes aprender Meta Ads y recuperar tu inversión con una sola campaña 🚀`
     );
-    estados[remoteJid] = ESTADO.INICIO;
+    estados[remoteJid] = ESTADO.COMPLETADO;
 }
 
 async function flujoAcceso(sock, remoteJid) {
